@@ -96,6 +96,17 @@ REGLAS_CONEXION = [
     ("Virrey",             "Calle 85",            0.70),
     ("Calle 85",           "Héroes",              0.65),
 
+    # TRONCAL NQS CENTRAL (Intercambiador real Norte -> NQS Sur)
+    ("Héroes",             "La Castellana",       1.10),
+    ("La Castellana",       "NQS Calle 75",        0.80),
+    ("NQS Calle 75",        "Avenida Chile",       1.20),
+    ("Avenida Chile",       "7 de Agosto",         0.60),
+    ("7 de Agosto",         "Movistar Arena",      0.70),
+    ("Movistar Arena",      "Campín / U. Antonio Nariño", 0.60),
+    ("Campín / U. Antonio Nariño", "Universidad Nacional", 1.10),
+    ("Universidad Nacional", "Avenida NQS Eldorado", 1.10),
+    ("Avenida NQS Eldorado", "Paloquemao",          1.40),
+
     # TRONCAL CARACAS (Héroes → Tercer Milenio)
     ("Héroes",             "Calle 76",            0.85),
     ("Calle 76",           "Calle 72",            0.45),
@@ -106,8 +117,8 @@ REGLAS_CONEXION = [
     ("Marly",              "Calle 45",            0.60),
     ("Calle 45",           "Avenida 39",          0.55),
     ("Avenida 39",         "Profamilia",          0.65),
-    ("Profamilia",         "Calle 26",            0.60),
-    ("Calle 26",           "Calle 22",            0.45),
+    ("Profamilia",         "Avenida El Dorado",   0.60),  # Corregido de Calle 26 a Avenida El Dorado
+    ("Avenida El Dorado",  "Calle 22",            0.45),  # Enlace corregido
     ("Calle 22",           "Calle 19",            0.40),
     ("Calle 19",           "Av. Jiménez",         0.50),
     ("Av. Jiménez",        "Tercer Milenio",      0.65),
@@ -124,8 +135,7 @@ REGLAS_CONEXION = [
     ("Avenida Eldorado",   "CAN",                 2.40),
     ("CAN",                "El Tiempo / Maloka",  1.90),
 
-    # TRONCAL NQS CENTRAL Y SUR (Conexión Norte a Sur)
-    ("Calle 76",           "Paloquemao",          4.20), 
+    # TRONCAL NQS SUR (Paloquemao -> Portal Sur)
     ("Paloquemao",         "Ricaurte",            1.10), 
     ("Ricaurte",           "Sena",                2.10), 
     ("Sena",               "NQS Calle 30 Sur",    1.10),
@@ -139,14 +149,12 @@ REGLAS_CONEXION = [
     ("Ricaurte",           "Banderas",            6.20),
     ("Banderas",           "Portal Américas",     3.90),
 
-    # INTERCAMBIADORES DE TRONCAL (Estaciones de transferencia)
-    ("Avenida Eldorado",   "Paloquemao",          1.80), 
-    ("Ricaurte",           "Paloquemao",          1.10) ,
-      # INTERCAMBIADORES ADICIONALES
+    # INTERCAMBIADORES ADICIONALES
     ("Avenida Eldorado",   "Paloquemao",          1.80), 
     ("Ricaurte",           "Paloquemao",          1.10),
-    ("Avenida El Dorado",  "Calle 26",            0.50) 
+    ("Avenida El Dorado",  "Calle 26",            0.50)   # Transbordo peatonal Caracas <-> Calle 26
 ]
+
 
 RUTAS_DISPONIBLES = {
     ("Portal Norte", "Portal Sur"): [
