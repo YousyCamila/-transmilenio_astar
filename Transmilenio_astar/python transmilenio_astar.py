@@ -4,6 +4,7 @@ import math
 # COORDENADAS GEOGRÁFICAS DE LAS ESTACIONES 
 
 COORDENADAS = {
+    # Troncal Norte (Autopista Norte)
     "Portal Norte":       (4.7562, -74.0452),
     "Toberín":            (4.7408, -74.0461),
     "Calle 161":          (4.7341, -74.0464),
@@ -15,43 +16,53 @@ COORDENADAS = {
     "Prado":              (4.6916, -74.0478),
     "Calle 127":          (4.6843, -74.0481),
     "Pepe Sierra":        (4.6762, -74.0484),
-    "Calle 106":          (4.6693, -74.0483),
-    "Calle 100":          (4.6763, -74.0483),
-    "Virrey":             (4.6631, -74.0553),
-    "Calle 85":           (4.6660, -74.0563),
+    "Calle 106":          (4.6740, -74.0515),  
+    "Calle 100":          (4.6840, -74.0577),  
+    "Virrey":             (4.6653, -74.0561),
+    "Calle 85":           (4.6610, -74.0569),
     "Héroes":             (4.6572, -74.0571),
+    
+    # Troncal Caracas (Norte a Sur)
     "Calle 76":           (4.6511, -74.0573),
     "Calle 72":           (4.6492, -74.0572),
     "Flores":             (4.6413, -74.0581),
     "Calle 63":           (4.6342, -74.0583),
-    "Calle 57":           (4.6271, -74.0641),
+    "Calle 57":           (4.6288, -74.0628),  
     "Marly":              (4.6192, -74.0643),
     "Calle 45":           (4.6113, -74.0644),
     "Avenida 39":         (4.6053, -74.0648),
     "Profamilia":         (4.5993, -74.0651),
-    "Calle 26":           (4.6113, -74.0823),
-    "Calle 22":           (4.6063, -74.0721),
-    "Calle 19":           (4.6023, -74.0698),
+    "Calle 26":           (4.6166, -74.0721),  
+    "Calle 22":           (4.6110, -74.0728),  
+    "Calle 19":           (4.6048, -74.0741),  
     "Av. Jiménez":        (4.5991, -74.0752),
     "Tercer Milenio":     (4.5931, -74.0761),
     "Hospital":           (4.5862, -74.0772),
     "Hortúa":             (4.5783, -74.0781),
-    "Santa Lucía":        (4.5421, -74.1062),
-    "Calle 40 Sur":       (4.5352, -74.1081),
+    
+    # Troncal Caracas Sur / Usme
+    "Santa Lucía":        (4.5701, -74.1011),
+    "Calle 40 Sur":       (4.5615, -74.1030), 
     "Portal Usme":        (4.4991, -74.1143),
-    "Avenida Eldorado":   (4.6511, -74.1073),
+    
+    # Troncal Calle 26 (Avenida Eldorado)
+    "Avenida Eldorado":   (4.6410, -74.0832),  
     "CAN":                (4.6413, -74.1043),
     "El Tiempo / Maloka": (4.6302, -74.0992),
-    "Sena":               (4.6203, -74.1082),
-    "NQS Calle 30 Sur":   (4.6082, -74.1083),
-    "NQS Calle 38 Sur":   (4.5983, -74.1082),
+    
+    # Troncal NQS / Autopista Sur
+    "Sena":               (4.5956, -74.1123),  
+    "NQS Calle 30 Sur":   (4.5892, -74.1165),  
+    "NQS Calle 38 Sur":   (4.5810, -74.1221),  
     "General Santander":  (4.5873, -74.1081),
-    "Portal Sur":         (4.5393, -74.1083),
-    "De La Sabana":       (4.5983, -74.0831),
-    "Ricaurte":           (4.5963, -74.0891),
-    "Banderas":           (4.5773, -74.1282),
-    "Portal Américas":    (4.6283, -74.1552),
-    "Paloquemao":         (4.6073, -74.0991),
+    "Portal Sur":         (4.5969, -74.1694), 
+    
+    # Troncal Américas / Zona Centro-Occidente
+    "De La Sabana":       (4.6053, -74.0812),  
+    "Ricaurte":           (4.6032, -74.0915),  
+    "Paloquemao":         (4.6110, -74.0898), 
+    "Banderas":           (4.6175, -74.1538),  
+    "Portal Américas":    (4.6283, -74.1552)
 }
 
 
