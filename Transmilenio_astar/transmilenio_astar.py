@@ -17,10 +17,20 @@ COORDENADAS = {
     "Calle 127":          (4.6843, -74.0481),
     "Pepe Sierra":        (4.6762, -74.0484),
     "Calle 106":          (4.6740, -74.0515),  
-    "Calle 100":          (4.6840, -74.0577),  
+    "Calle 100":          (4.6685, -74.0545),  
     "Virrey":             (4.6653, -74.0561),
     "Calle 85":           (4.6610, -74.0569),
     "Héroes":             (4.6572, -74.0571),
+
+    # Troncal NQS Central (Conexión Norte -> Sur)
+    "La Castellana":       (4.6641, -74.0620), 
+    "NQS Calle 75":        (4.6615, -74.0674),  
+    "Avenida Chile":       (4.6567, -74.0712),  
+    "7 de Agosto":         (4.6525, -74.0740),  
+    "Movistar Arena":      (4.6483, -74.0771),  
+    "Campín / U. Antonio Nariño": (4.6441, -74.0798), 
+    "Universidad Nacional": (4.6362, -74.0851), 
+    "Avenida NQS Eldorado": (4.6291, -74.0882),
     
     # Troncal Caracas (Norte a Sur)
     "Calle 76":           (4.6511, -74.0573),
@@ -62,7 +72,9 @@ COORDENADAS = {
     "Ricaurte":           (4.6032, -74.0915),  
     "Paloquemao":         (4.6110, -74.0898), 
     "Banderas":           (4.6175, -74.1538),  
-    "Portal Américas":    (4.6283, -74.1552)
+    "Portal Américas":    (4.6283, -74.1552),
+
+    
 }
 
 
@@ -129,7 +141,11 @@ REGLAS_CONEXION = [
 
     # INTERCAMBIADORES DE TRONCAL (Estaciones de transferencia)
     ("Avenida Eldorado",   "Paloquemao",          1.80), 
-    ("Ricaurte",           "Paloquemao",          1.10)  
+    ("Ricaurte",           "Paloquemao",          1.10) ,
+      # INTERCAMBIADORES ADICIONALES
+    ("Avenida Eldorado",   "Paloquemao",          1.80), 
+    ("Ricaurte",           "Paloquemao",          1.10),
+    ("Avenida El Dorado",  "Calle 26",            0.50) 
 ]
 
 RUTAS_DISPONIBLES = {
