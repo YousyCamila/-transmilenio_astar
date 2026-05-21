@@ -83,6 +83,7 @@ REGLAS_CONEXION = [
     ("Calle 100",          "Virrey",              1.20),
     ("Virrey",             "Calle 85",            0.70),
     ("Calle 85",           "Héroes",              0.65),
+
     # TRONCAL CARACAS (Héroes → Tercer Milenio)
     ("Héroes",             "Calle 76",            0.85),
     ("Calle 76",           "Calle 72",            0.45),
@@ -98,31 +99,38 @@ REGLAS_CONEXION = [
     ("Calle 22",           "Calle 19",            0.40),
     ("Calle 19",           "Av. Jiménez",         0.50),
     ("Av. Jiménez",        "Tercer Milenio",      0.65),
-    # TRONCAL CARACAS SUR (→ Portal Usme)
+
+    # TRONCAL CARACAS SUR (Tercer Milenio → Portal Usme)
     ("Tercer Milenio",     "Hospital",            0.75),
     ("Hospital",           "Hortúa",              0.80),
-    ("Hortúa",             "Santa Lucía",         4.20),
+    ("Hortúa",             "Santa Lucía",         3.20), 
     ("Santa Lucía",        "Calle 40 Sur",        0.90),
     ("Calle 40 Sur",       "Portal Usme",         6.10),
-    # TRONCAL NQS CENTRAL
-    ("Calle 76",           "Avenida Eldorado",    3.80),
+
+    # TRONCAL CALLE 26 / ELDORADO (Centro → Occidente)
+    ("Calle 26",           "Avenida Eldorado",    1.30), 
     ("Avenida Eldorado",   "CAN",                 2.40),
     ("CAN",                "El Tiempo / Maloka",  1.90),
-    ("El Tiempo / Maloka", "Sena",                4.10),
+
+    # TRONCAL NQS CENTRAL Y SUR (Conexión Norte a Sur)
+    ("Calle 76",           "Paloquemao",          4.20), 
+    ("Paloquemao",         "Ricaurte",            1.10), 
+    ("Ricaurte",           "Sena",                2.10), 
     ("Sena",               "NQS Calle 30 Sur",    1.10),
     ("NQS Calle 30 Sur",   "NQS Calle 38 Sur",    1.00),
     ("NQS Calle 38 Sur",   "General Santander",   1.30),
     ("General Santander",  "Portal Sur",          4.80),
-    # TRONCAL AMÉRICAS / CALLE 13
+
+    # TRONCAL AMÉRICAS (Oriente → Occidente)
     ("Av. Jiménez",        "De La Sabana",        0.75),
-    ("De La Sabana",       "Ricaurte",            0.95),
+    ("De La Sabana",       "Ricaurte",            0.95), 
     ("Ricaurte",           "Banderas",            6.20),
     ("Banderas",           "Portal Américas",     3.90),
-    # CONEXIONES EXPRESAS / INTERCAMBIADORES
-    ("Ricaurte",           "Paloquemao",          1.10),
-    ("Avenida Eldorado",   "Ricaurte",            2.80),
-]
 
+    # INTERCAMBIADORES DE TRONCAL (Estaciones de transferencia)
+    ("Avenida Eldorado",   "Paloquemao",          1.80), 
+    ("Ricaurte",           "Paloquemao",          1.10)  
+]
 
 RUTAS_DISPONIBLES = {
     ("Portal Norte", "Portal Sur"): [
