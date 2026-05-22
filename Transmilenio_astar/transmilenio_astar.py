@@ -117,8 +117,8 @@ REGLAS_CONEXION = [
     ("Marly",              "Calle 45",            0.60),
     ("Calle 45",           "Avenida 39",          0.55),
     ("Avenida 39",         "Profamilia",          0.65),
-    ("Profamilia",         "Avenida El Dorado",   0.60),  # Corregido de Calle 26 a Avenida El Dorado
-    ("Avenida El Dorado",  "Calle 22",            0.45),  # Enlace corregido
+    ("Profamilia",         "Avenida El Dorado",   0.60),  
+    ("Avenida El Dorado",  "Calle 22",            0.45),  
     ("Calle 22",           "Calle 19",            0.40),
     ("Calle 19",           "Av. Jiménez",         0.50),
     ("Av. Jiménez",        "Tercer Milenio",      0.65),
@@ -152,7 +152,7 @@ REGLAS_CONEXION = [
     # INTERCAMBIADORES ADICIONALES
     ("Avenida Eldorado",   "Paloquemao",          1.80), 
     ("Ricaurte",           "Paloquemao",          1.10),
-    ("Avenida El Dorado",  "Calle 26",            0.50)   # Transbordo peatonal Caracas <-> Calle 26
+    ("Avenida El Dorado",  "Calle 26",            0.50)  
 ]
 
 
